@@ -1,5 +1,5 @@
-(1) Create a file named fruits.txt with at least 10 line of text, then display the first 10 lines using head
-Ans: cat > fruits.txt
+# (1) Create a file named fruits.txt with at least 10 line of text, then display the first 10 lines using head
+## Ans: cat > fruits.txt
      Apple
      Banana
      Mango
@@ -10,11 +10,11 @@ Ans: cat > fruits.txt
      Pineapple
      Litchi
      Watermelon
-(2) Display only the first 5 lines of fruits.txt
-Ans: head -5 fruits.txt
-(3) Create a file named employees.txt with at least 8 lines and display the first 3 lines
-Ans: cat > employees.txt
-     Rahul
+# (2) Display only the first 5 lines of fruits.txt
+## Ans: head -5 fruits.txt
+# (3) Create a file named employees.txt with at least 8 lines and display the first 3 lines
+## Ans: cat > employees.txt
+     Rahul 
      Priya
      Aman
      Neha
@@ -22,8 +22,8 @@ Ans: cat > employees.txt
      Sneha
      Vikas
      Anjali
-(4) Navigate to another directory and use head to view the beginning of a text file there
-Ans: cd ..
+# (4) Navigate to another directory and use head to view the beginning of a text file there
+## Ans: cd ..
      head -5 fruits.txt
-(5) Display your current working directory after completing todays tasks 
-Ans: pwd
+# (5) Display your current working directory after completing todays tasks 
+## Ans: pwd
