@@ -64,26 +64,3 @@ q
 ```bash
 pwd
 ```
-
----
-
-# Mini Challenge
-
-## Create a file named `employees.txt` with 30 lines. Open it with `less`, search for one employee name, scroll to the bottom, then quit.
-
-### Ans:
-
-```bash
-nano employees.txt
-```
-
-(Add 30 lines, then save.)
-
-```bash
-less employees.txt
-```
-
-Inside `less`:
-
-```text
-/Employee
