@@ -1,46 +1,54 @@
-# Title: Finding Files and Directories with `find`
+
+# Title: Finding Files Quickly with `locate`
 
 ---
 
-## (1) Create three files named `app.py`, `notes.txt`, and `employees.csv`. Use `find` to locate `notes.txt` from the current directory.
+## (1) Check whether the `locate` command is available by running `locate --version` or `locate notes.txt`.
 
 ### Ans:
 
 ```bash
-touch app.py notes.txt employees.csv
-find . -name "notes.txt"
+locate --version
+```
+
+or
+
+```bash
+locate notes.txt
 ```
 
 ---
 
-## (2) Create two directories named `data` and `backup`. Use `find` to list only directories.
+## (2) Create a file named `sample.txt` and try locating it with `locate`. If it isn't found, explain why.
 
 ### Ans:
 
 ```bash
-mkdir data backup
-find . -type d
+touch sample.txt
+locate sample.txt
+```
+
+If the file is not found, it may be because the `locate` database has not been updated yet.
+
+---
+
+## (3) Use `find` to locate `sample.txt` and compare the result with `locate`.
+
+### Ans:
+
+```bash
+find . -name "sample.txt"
 ```
 
 ---
 
-## (3) Use `find` to locate every `.txt` file in the current directory and its subdirectories.
+## (4) If `locate` is available, run `updatedb` (if permitted) and try locating `sample.txt` again.
 
 ### Ans:
 
 ```bash
-find . -name "*.txt"
-```
-
----
-
-## (4) Create a file named `report.txt` inside the `backup` directory. Use `find` to locate `report.txt`.
-
-### Ans:
-
-```bash
-touch backup/report.txt
-find . -name "report.txt"
+sudo updatedb
+locate sample.txt
 ```
 
 ---
